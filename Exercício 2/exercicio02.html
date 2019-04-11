@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Exercício 02</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css" />
+</head>
+<body>
+	<h1>Ficha Cadastral</h1>
+	<fieldset>
+		<legend>Dados Pessoais:</legend>
+		<form method="POST" action="cadastrar.html" name="cadastro">
+			<div class="campo-grande">
+				<label>Nome:
+					<input type="text" name="nome"/>
+				</label>
+			</div>
+			<div class="campo-pequeno">
+				<label>	RG:
+				<input type="text" name="rg"/>
+				</label>
+			</div>
+			<div class="campo-pequeno">
+				<label>
+				CPF:
+				<input type="text" name="cpf"/>
+				</label>
+			</div>
+			<div class="campo-grande">
+				<label>
+				Endereço:
+				<input type="text" name="endereco"/>
+				</label>
+			</div>
+			<div class="campo-pequeno">
+				<label>
+				Gênero:
+				<select name="genero">
+					<option value="Feminino">Feminino</option>
+					<option value="Masculino">Masculino</option>
+				</select>
+				</label>
+			</div>
+			<div class="campo-pequeno">
+				<label>
+					Data de Nascimento:
+					<input type="text" name="datanasc"/>
+				</label>
+			</div>
+			<div class="campo">
+				<p>Situação Civil:</p>
+				<label>
+					Solteira(o)<input type="radio" name="civil" checked="" value="solteiro">
+				</label>
+				<label>
+					Casada(o)<input type="radio" name="civil" value="casado">
+				</label>
+				<label>
+					Viúva(o)<input type="radio" name="civil" value="viuvo">
+				</label>
+			</div>
+			<div style="text-align: center;">
+				<button id="botao">Cadastro</button>
+			</div>
+			
+		</form>
+	</fieldset>
+	<div id="relatorio">
+	</div>
+	<script src="javascript.js">
+	</script>
+</body>
+</html>
